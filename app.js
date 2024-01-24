@@ -5,6 +5,8 @@ import db from './database/db.js'
 
 import saleRoutes from './routes/routes.js';
 
+import {PORT} from './routes/config.js'
+
 const app = express();
 
 app.use( cors());
@@ -23,8 +25,8 @@ try {
 //     res.send('Holi')
 // })
 
-app.listen(8000, ()=>{
+app.listen(PORT, ()=>{
 
-    console.log('Server UP running in http://localhost:8000')
+    console.log('Server UP running in http://localhost:',PORT)
 }
 );

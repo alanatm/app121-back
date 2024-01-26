@@ -4,7 +4,6 @@ import {
     DB_DATABASE,
     DB_USER,
     DB_PASSWORD,
-    DB_URL
 } from '../routes/config.js';
 
 const db = new Sequelize(DB_DATABASE, DB_USER,DB_PASSWORD,{
